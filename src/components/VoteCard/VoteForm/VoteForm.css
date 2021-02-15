@@ -1,0 +1,12 @@
+.vote-form .vote-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.vote-form .vote-group-item {
+  margin: 10px 0;
+}
+
+.vote-form .vote-group-item span {
+  font-size: 18px;
+}
