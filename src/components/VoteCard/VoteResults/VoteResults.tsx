@@ -12,9 +12,9 @@ export const VoteResults: FC<VoteResultsProps> = (props): ReactElement => {
   const { variants, setModeView } = props;
 
   const renderVariant = (variant: Variant): ReactElement => {
-    const { value } = variant;
+    const { voteNumber } = variant;
 
-    return <Progress percent={value} />
+    return <Progress percent={voteNumber} />
   }
 
   return (

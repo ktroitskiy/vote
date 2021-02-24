@@ -13,7 +13,7 @@ export const VoteForm: FC<VoteFormProps> = (props): ReactElement => {
   const { variants, setModeView } = props;
 
   const renderVariant = (variant: Variant): ReactElement => {
-    const { id, name } = variant;
+    const { id, message } = variant;
 
     return (
       <Radio
@@ -21,7 +21,7 @@ export const VoteForm: FC<VoteFormProps> = (props): ReactElement => {
         value={id}
         className="vote-group-item"
       >
-        {name}
+        {message}
       </Radio>
     );
   }

@@ -6,11 +6,11 @@ export enum VoteMode {
 
 export type Variant = {
   id: string;
-  name: string;
-  value: number;
+  message: string;
+  voteNumber: number;
 };
 
 export interface Vote {
-  title: string;
+  name: string;
   variants: Variant[];
 };

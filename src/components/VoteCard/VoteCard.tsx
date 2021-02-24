@@ -12,7 +12,7 @@ export interface VoteCardProps {
 export const VoteCard: FC<VoteCardProps> = (props): ReactElement => {
   const [ mode, setMode ] = useState<VoteMode>(VoteMode.VOTE);
   const { vote } = props;
-  const { title, variants } = vote;
+  const { name, variants } = vote;
 
   const getActualRender = (): ReactElement => {
     if (mode === VoteMode.VOTE) {
@@ -29,7 +29,7 @@ export const VoteCard: FC<VoteCardProps> = (props): ReactElement => {
   return (
     <div className="vote-card">
       <Card
-        title={title}
+        title={name}
       >
         {getActualRender()}
       </Card>
